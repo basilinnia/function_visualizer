@@ -101,7 +101,7 @@ class MainWindow(QMainWindow):
         self.set_validators()
 
     def set_validators(self):
-        reg = QRegularExpression("[+-]?[0-9]\\d*\\.?\\d{2}")
+        reg = QRegularExpression("[+-]?[0-9]\\d*\\.?\\d{6}")
         regValidator = QRegularExpressionValidator(reg)
         self.a_edit.setValidator(regValidator)
         self.b_edit.setValidator(regValidator)
